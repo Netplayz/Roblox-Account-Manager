@@ -1,4 +1,4 @@
-﻿using IWshRuntimeLibrary;
+﻿
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -203,8 +203,9 @@ namespace Auto_Update
                     if (!Directory.Exists(StartMenuPath))
                         Directory.CreateDirectory(StartMenuPath);
 
-                    IWshShortcut shortcut = (IWshShortcut)new WshShell().CreateShortcut(Path.Combine(StartMenuPath, "Roblox Account Manager.lnk"));
-
+                    Type shellType = Type.GetTypeFromProgID("WScript.Shell");
+                    dynamic shell = Activator.CreateInstance(shellType);
+                    dynamic shortcut = shell.CreateShortcut(Path.Combine(StartMenuPath, "Roblox Account Manager.lnk"));
                     shortcut.Description = "Roblox Account Manager";
                     shortcut.TargetPath = ProgramFN;
                     shortcut.WorkingDirectory = Directory.GetParent(ProgramFN).FullName;
