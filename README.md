@@ -1,36 +1,32 @@
-[![Download](https://img.shields.io/github/v/release/ic3w0lf22/Roblox-Account-Manager)](https://github.com/ic3w0lf22/Roblox-Account-Manager/releases/latest)
-[![Latest Downloads](https://img.shields.io/github/downloads/ic3w0lf22/Roblox-Account-Manager/latest/total)](https://github.com/ic3w0lf22/Roblox-Account-Manager/releases)
+[![Build](https://github.com/Netplayz/Roblox-Account-Manager/actions/workflows/build-release.yml/badge.svg)](https://github.com/Netplayz/Roblox-Account-Manager/actions/workflows/build-release.yml)
 [![Discord](https://img.shields.io/discord/871845273800957982?label=Discord)](https://discord.gg/MsEH7smXY8)
-![License](https://img.shields.io/github/license/ic3w0lf22/Roblox-Account-Manager)
+![License](https://img.shields.io/github/license/Netplayz/Roblox-Account-Manager)
 
-<!-- BEGIN LATEST DOWNLOAD BUTTON -->
-[![Download zip](https://custom-icon-badges.herokuapp.com/badge/-Download-blue?style=for-the-badge&logo=download&logoColor=white "Download")](https://github.com/ic3w0lf22/Roblox-Account-Manager/releases/download/3.6.1/Roblox.Account.Manager.3.6.1.zip)
-<!-- END LATEST DOWNLOAD BUTTON -->
-
-[Click here to view Roblox Account Manager features](https://github.com/ic3w0lf22/Roblox-Account-Manager/blob/master/README.md#features)
+[Click here to view Roblox Account Manager features](https://github.com/Netplayz/Roblox-Account-Manager/blob/master/README.md#features)
 
 # Roblox Account Manager
-Application that allows you to add multiple accounts into one application allowing you to easily play on alt accounts without having to change accounts
+
+Application that allows you to add multiple accounts into one application allowing you to easily play on alt accounts without having to change accounts.
 
 Useful for games that require grinding off other players, or storage accounts that hold in game items or currency, or just to have multiple accounts that you can easily find and use.
 
 You are welcome to edit the code and create pull requests if it'll benefit this project.
 
-Multiple Roblox Instances is built into the account manager but [must be manually enabled](https://github.com/ic3w0lf22/Roblox-Account-Manager/blob/master/README.md#q-how-do-i-enable-multi-roblox).
+Multiple Roblox Instances is built into the account manager but [must be manually enabled](https://github.com/Netplayz/Roblox-Account-Manager/blob/master/README.md#q-how-do-i-enable-multi-roblox).
 
-Report bugs to the issues section or direct message me via discord @ ic3#0001 or join the discord: https://discord.gg/MsEH7smXY8
+Report bugs to the issues section or join the discord: https://discord.gg/MsEH7smXY8
 
 # WARNING
 If someone asks you to generate an "rbx-player link", **DO NOT** do it, they can use these to join any game using your account, or even launch roblox studio with one of your games. They can do many things in game such as spend your robux or even do things that can get your account terminated. **USE THESE FEATURES AT YOUR OWN RISK**
 
 # Extra Features
-Extra features can be enabled by setting DevMode=false to DevMode=true in RAMSettings.ini
+Extra features can be enabled by setting DevMode=false to DevMode=true in RAMSettings.ini.
 Beware of the risks that you are taking if you accidentally send something to someone.
 
 If you ever want a friend to join a game using your account, make sure you have the PlaceId and JobId correctly entered, then right click an account, and click "Copy rbx-player link", DO NOT do this if someone asks you for it.
 
 # Download
-To install this, head over to the [Releases](https://github.com/ic3w0lf22/Roblox-Account-Manager/releases) section and download the rar file at the very top, once downloaded, extract the files into a folder on your desktop and run RBX Alt Manager.exe.
+To install this, head over to the [Releases](https://github.com/Netplayz/Roblox-Account-Manager/releases) section and download the zip file at the very top, once downloaded, extract the files into a folder on your desktop and run RBX Alt Manager.exe.
 
 If the application isn't starting or not working, make sure to install the [Latest .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).
 Still having issues? Download and install [vcredist](https://aka.ms/vs/16/release/vc_redist.x86.exe)
@@ -43,7 +39,7 @@ Be careful executing random scripts when having dangerous settings enabled.
 # Frequently Asked Questions
 ## **Q:** Why is this program detected as a virus?
 
-**A:** Open source programs such as this program are commonly detected as viruses because actual malware may be using the same libaries as this one. For example, account manager may be detected as a RAT because of the Account Control feature, this feature uses [websockets](https://github.com/ic3w0lf22/Roblox-Account-Manager/blob/master/RBX%20Alt%20Manager/Nexus/WebsocketServer.cs) to connect to clients which is the same way actual malware may use to connect maliciously to someone elses computer. If you'd like, you can download [visual studio](https://visualstudio.microsoft.com/downloads/) yourself (it's free) and compile this program on your own, you may even get the same virus detections as the public release.
+**A:** Open source programs such as this program are commonly detected as viruses because actual malware may be using the same libaries as this one. For example, account manager may be detected as a RAT because of the Account Control feature, this feature uses [websockets](https://github.com/Netplayz/Roblox-Account-Manager/blob/master/RBX%20Alt%20Manager/Nexus/WebsocketServer.cs) to connect to clients which is the same way actual malware may use to connect maliciously to someone elses computer. If you'd like, you can download [visual studio](https://visualstudio.microsoft.com/downloads/) yourself (it's free) and compile this program on your own, you may even get the same virus detections as the public release.
 
 
 ## **Q:** How do I enable multi-roblox?
@@ -103,15 +99,15 @@ Be careful executing random scripts when having dangerous settings enabled.
 **A:** If you have a idea or a request for a feature you can submit such ideas/requests in suggestions
 
 
-## **Q:** I’ve encountered a bug/issue on this software
+## **Q:** I've encountered a bug/issue on this software
 
 **A:** If you have a bug or issue please explain your issue with screenshots (if possible) and/or a highly descriptive explanation in bugs we will try to get back to you ASAP.
 Make sure you click "Open Details" before screenshotting. Please make sure your output is in English.
 
 
-## **Q:** I can’t launch multiple accounts repeatedly.
+## **Q:** I can't launch multiple accounts repeatedly.
 
-**A:** This is due to Roblox’s rate limiting
+**A:** This is due to Roblox's rate limiting
 
 
 ## **Q:** Adding an account doesn't work
@@ -129,9 +125,9 @@ Make sure you click "Open Details" before screenshotting. Please make sure your 
 # Features
 | Feature | Description | How to |
 | :--- | :---: | ---: |
-| Account Encryption | All your account data is locally encrypted using your computer as the **password/key** meaning if someone else gets a hold of your account data, they will **NOT** be able to decrypt it unless you decrypted it yourself and shared it | **DO NOT SHARE YOUR `AccountData.json` FILE AT ALL |
+| Account Encryption | All your account data is locally encrypted using your computer as the **password/key** meaning if someone else gets a hold of your account data, they will **NOT** be able to decrypt it unless you decrypted it yourself and shared it | **DO NOT SHARE YOUR `AccountData.json` FILE AT ALL** |
 | Password Encryption | Use a password to encrypt your data | This is recommended as it allows you store your data safely in google drive/similar and won't get corrupted due to you switching computers |
-| [Multi Roblox](https://github.com/ic3w0lf22/Roblox-Account-Manager/blob/master/README.md#q-how-do-i-enable-multi-roblox) | [DISABLED BY DEFAULT, READ FAQ] RAM comes with a built-in multi Roblox allowing multiple Roblox clients to be open at once | **If this doesn't work for you, make sure no Roblox processes are running in the background by checking in task manager, then restart RAM** |
+| [Multi Roblox](https://github.com/Netplayz/Roblox-Account-Manager/blob/master/README.md#q-how-do-i-enable-multi-roblox) | [DISABLED BY DEFAULT, READ FAQ] RAM comes with a built-in multi Roblox allowing multiple Roblox clients to be open at once | **If this doesn't work for you, make sure no Roblox processes are running in the background by checking in task manager, then restart RAM** |
 | Load Region | See where a server is located and get an accurate ping reading | Right click a server in the `Server List`, then click `Load Region` **(Requires a valid account to be selected in the main window)** |
 | Server List | See a game's servers, including the servers' data such as player count and server ping | Click `Server List` on the right side of the main window |
 | [Join Small Servers](https://youtu.be/Red66cV6vVI) | Easily join small servers in games that use lobby starter places to teleport you to another game | Insert the actual game's PlaceId into the text box next to `Refresh` in the `Server List`, click `Refresh`, then right click a server and click `Join Game`, you will hear a beep if successful, once you hear that beep, you can join the main game |
@@ -156,7 +152,7 @@ Make sure you click "Open Details" before screenshotting. Please make sure your 
 | Themes | Customize RAM to your liking (P.S. I know it's very ugly, not much I can do about it with WinForms) | Click `Edit Theme` in the main window |
 | Developer Mode | Enable hidden features not available to normal users for safety reasons | Click the settings button (gear cog in top-right corner), click `Developer`, then check the `Enable Developer Mode` box |
 | Local Web API | Easily use many RAM features by making a simple http request | [Documentation](https://ic3w0lf22.gitbook.io/roblox-account-manager/) |
-| Account Control | Control your in-game accounts using the `Account Control` window in RAM | Click `Account Control` in the main window - [Documentation](https://github.com/ic3w0lf22/Roblox-Account-Manager/blob/master/RBX%20Alt%20Manager/Nexus/NexusDocs.md) |
+| Account Control | Control your in-game accounts using the `Account Control` window in RAM | Click `Account Control` in the main window - [Documentation](https://github.com/Netplayz/Roblox-Account-Manager/blob/master/RBX%20Alt%20Manager/Nexus/NexusDocs.md) |
 | Import Cookies | Import accounts using their .ROBLOSECURITY cookies | You can drag and drop one or multiple cookies directly into the program, or you can enable developer mode and use the `Import` window |
 | FPS Unlocker | Unlocks the Roblox client's FPS using Roblox's ClientAppSettings.json | Settings can be found by clicking the settings cog, then miscellaneous |
 | Bulk User Importing | Easily import your accounts by their username & password combos, or by cookies | Click the arrow on the right side of the `Add Account` button, then select user:pass/cookies |
@@ -166,6 +162,24 @@ Make sure you click "Open Details" before screenshotting. Please make sure your 
 | Auto Relaunch | Automatically relaunch your accounts if they are not in game/have been AFK kicked | Watch a youtube tutorial on how to use this. If you do not have an executor that works with Nexus.lua: click `Account Control`, go to `Settings`, then enable `Use Presence API` |
 | Quick Log In | Easily log in to an account on a different computer using Roblox's Quick Log In feature | Right click an account, then select `Quick Log In` |
 | AI Captcha Assistance | Assists you in the "Pick the image" captchas using the Nopecha API (Requires a subscription key) | You can enable auto solve, but it is not recommended to use, your best option is to add a captcha solving extension to the browser along with a BrowserConfig to automatically set the key per new browser opened |
+| ERLC Join | Quickly join an Emergency Response: Liberty County server by entering a server code, JobID, or private server link | Enter a code in the ERLC section on the main form and click "Join ERLC" |
+
+# License
+
+Copyright (C) 2025 ic3w0lf22
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # Preview (Version 3.4)
 ![github-large](Images/Image4.png)
