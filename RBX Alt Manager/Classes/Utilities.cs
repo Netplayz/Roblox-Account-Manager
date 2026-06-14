@@ -290,6 +290,11 @@ public static Color Lerp(this Color s, Color t, float k)
             }
             else if (control is ProgressBar)
                 control.BackColor = ThemeEditor.LabelBackground;
+            else if (control is GroupBox)
+            {
+                control.ForeColor = ThemeEditor.LabelForeground;
+                control.Controls.ApplyTheme();
+            }
             else if (control is Panel)
                 control.Controls.ApplyTheme();
         }

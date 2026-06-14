@@ -182,7 +182,7 @@ namespace RBX_Alt_Manager
             // Remove
             // 
             this.Remove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Remove.Location = new System.Drawing.Point(114, 266);
+            this.Remove.Location = new System.Drawing.Point(114, 355);
             this.Remove.Name = "Remove";
             this.Remove.Size = new System.Drawing.Size(95, 23);
             this.Remove.TabIndex = 15;
@@ -451,7 +451,7 @@ namespace RBX_Alt_Manager
             // 
             this.HideUsernamesCheckbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.HideUsernamesCheckbox.AutoSize = true;
-            this.HideUsernamesCheckbox.Location = new System.Drawing.Point(215, 270);
+            this.HideUsernamesCheckbox.Location = new System.Drawing.Point(215, 359);
             this.HideUsernamesCheckbox.Name = "HideUsernamesCheckbox";
             this.HideUsernamesCheckbox.Size = new System.Drawing.Size(104, 17);
             this.HideUsernamesCheckbox.TabIndex = 16;
@@ -511,7 +511,7 @@ namespace RBX_Alt_Manager
             // 
             this.JoinDiscord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.JoinDiscord.Image = global::RBX_Alt_Manager.Properties.Resources.disc;
-            this.JoinDiscord.Location = new System.Drawing.Point(474, 266);
+            this.JoinDiscord.Location = new System.Drawing.Point(474, 355);
             this.JoinDiscord.Name = "JoinDiscord";
             this.JoinDiscord.Size = new System.Drawing.Size(23, 23);
             this.JoinDiscord.TabIndex = 19;
@@ -673,7 +673,7 @@ namespace RBX_Alt_Manager
             this.AccountsView.Location = new System.Drawing.Point(13, 13);
             this.AccountsView.Name = "AccountsView";
             this.AccountsView.ShowSortIndicators = false;
-            this.AccountsView.Size = new System.Drawing.Size(485, 246);
+            this.AccountsView.Size = new System.Drawing.Size(485, 335);
             this.AccountsView.SortGroupItemsByPrimaryColumn = false;
             this.AccountsView.TabIndex = 20;
             this.AccountsView.UseCompatibleStateImageBehavior = false;
@@ -958,7 +958,7 @@ namespace RBX_Alt_Manager
             this.DownloadProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.DownloadProgressBar.BackColor = System.Drawing.SystemColors.MenuText;
             this.DownloadProgressBar.Cursor = System.Windows.Forms.Cursors.Help;
-            this.DownloadProgressBar.Location = new System.Drawing.Point(13, 277);
+            this.DownloadProgressBar.Location = new System.Drawing.Point(13, 366);
             this.DownloadProgressBar.Name = "DownloadProgressBar";
             this.DownloadProgressBar.Size = new System.Drawing.Size(196, 11);
             this.DownloadProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -975,7 +975,7 @@ namespace RBX_Alt_Manager
             this.DLChromiumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.DLChromiumLabel.AutoSize = true;
             this.DLChromiumLabel.Cursor = System.Windows.Forms.Cursors.Help;
-            this.DLChromiumLabel.Location = new System.Drawing.Point(49, 261);
+            this.DLChromiumLabel.Location = new System.Drawing.Point(49, 350);
             this.DLChromiumLabel.Name = "DLChromiumLabel";
             this.DLChromiumLabel.Size = new System.Drawing.Size(127, 13);
             this.DLChromiumLabel.TabIndex = 1006;
@@ -983,10 +983,60 @@ namespace RBX_Alt_Manager
             this.DLChromiumLabel.Visible = false;
             this.DLChromiumLabel.Click += new System.EventHandler(this.DLChromiumLabel_Click);
             // 
+            // ERLCGroup
+            // 
+            this.ERLCGroup = new System.Windows.Forms.GroupBox();
+            this.ERLCGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ERLCGroup.Location = new System.Drawing.Point(503, 290);
+            this.ERLCGroup.Name = "ERLCGroup";
+            this.ERLCGroup.Size = new System.Drawing.Size(270, 65);
+            this.ERLCGroup.TabIndex = 1007;
+            this.ERLCGroup.TabStop = false;
+            this.ERLCGroup.Text = "ERLC";
+            // 
+            // ERLCCode
+            // 
+            this.ERLCCode = new RBX_Alt_Manager.Classes.BorderedTextBox();
+            this.ERLCCode.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))), ((int)(((byte)(122)))));
+            this.ERLCCode.Location = new System.Drawing.Point(6, 18);
+            this.ERLCCode.Name = "ERLCCode";
+            this.ERLCCode.Size = new System.Drawing.Size(258, 20);
+            this.ERLCCode.TabIndex = 0;
+            this.SaveTooltip.SetToolTip(this.ERLCCode, "Enter an ERLC server code, JobID, or private server link");
+            this.ERLCCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ERLCCode_KeyPress);
+            // 
+            // JoinERLC
+            // 
+            this.JoinERLC = new System.Windows.Forms.Button();
+            this.JoinERLC.Location = new System.Drawing.Point(6, 40);
+            this.JoinERLC.Name = "JoinERLC";
+            this.JoinERLC.Size = new System.Drawing.Size(75, 22);
+            this.JoinERLC.TabIndex = 1;
+            this.JoinERLC.Text = "Join ERLC";
+            this.JoinERLC.UseVisualStyleBackColor = true;
+            this.JoinERLC.Click += new System.EventHandler(this.JoinERLC_Click);
+            // 
+            // ERLCPlayers
+            // 
+            this.ERLCPlayers = new System.Windows.Forms.Label();
+            this.ERLCPlayers.AutoSize = true;
+            this.ERLCPlayers.Location = new System.Drawing.Point(87, 44);
+            this.ERLCPlayers.Name = "ERLCPlayers";
+            this.ERLCPlayers.Size = new System.Drawing.Size(37, 13);
+            this.ERLCPlayers.TabIndex = 2;
+            this.ERLCPlayers.Text = "0/20";
+            this.SaveTooltip.SetToolTip(this.ERLCPlayers, "ERLC server player count");
+            // 
+            // ERLCGroup controls
+            // 
+            this.ERLCGroup.Controls.Add(this.ERLCCode);
+            this.ERLCGroup.Controls.Add(this.JoinERLC);
+            this.ERLCGroup.Controls.Add(this.ERLCPlayers);
+            // 
             // Add
             // 
             this.Add.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Add.Location = new System.Drawing.Point(13, 266);
+            this.Add.Location = new System.Drawing.Point(13, 355);
             this.Add.Menu = this.AddAccountsStrip;
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(95, 23);
@@ -998,7 +1048,7 @@ namespace RBX_Alt_Manager
             // OpenBrowser
             // 
             this.OpenBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.OpenBrowser.Location = new System.Drawing.Point(325, 266);
+            this.OpenBrowser.Location = new System.Drawing.Point(325, 355);
             this.OpenBrowser.Menu = this.OpenBrowserStrip;
             this.OpenBrowser.Name = "OpenBrowser";
             this.OpenBrowser.Size = new System.Drawing.Size(143, 23);
@@ -1054,7 +1104,7 @@ namespace RBX_Alt_Manager
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 301);
+            this.ClientSize = new System.Drawing.Size(784, 390);
             this.Controls.Add(this.Remove);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.DLChromiumLabel);
@@ -1085,12 +1135,13 @@ namespace RBX_Alt_Manager
             this.Controls.Add(this.JobID);
             this.Controls.Add(this.PlaceID);
             this.Controls.Add(this.AccountsView);
+            this.Controls.Add(this.ERLCGroup);
             this.Controls.Add(this.PasswordPanel);
             this.Controls.Add(this.DownloadProgressBar);
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(800, 340);
+            this.MinimumSize = new System.Drawing.Size(800, 430);
             this.Name = "AccountManager";
             this.Text = "Roblox Account Manager";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AccountManager_FormClosing);
@@ -1201,5 +1252,9 @@ namespace RBX_Alt_Manager
         private System.Windows.Forms.ToolStripMenuItem customURLJSToolStripMenuItem;
         private System.Windows.Forms.ProgressBar DownloadProgressBar;
         private System.Windows.Forms.Label DLChromiumLabel;
+        private System.Windows.Forms.GroupBox ERLCGroup;
+        private Classes.BorderedTextBox ERLCCode;
+        private System.Windows.Forms.Button JoinERLC;
+        private System.Windows.Forms.Label ERLCPlayers;
     }
 }

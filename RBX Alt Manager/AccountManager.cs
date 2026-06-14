@@ -1502,6 +1502,64 @@ namespace RBX_Alt_Manager
             }).Start();
         }
 
+        private async void JoinERLC_Click(object sender, EventArgs e)
+        {
+            const long ERLCPlaceID = 2534724415;
+
+            string code = ERLCCode.Text.Trim();
+            if (string.IsNullOrEmpty(code)) return;
+
+            string jobId = "";
+            long placeId = ERLCPlaceID;
+            bool isVip = false;
+
+            Match urlMatch = Regex.Match(code, @"\/games\/(\d+)");
+            if (urlMatch.Success)
+            {
+                placeId = long.Parse(urlMatch.Groups[1].Value);
+                if (code.Contains("privateServerLinkCode"))
+                {
+                    jobId = code;
+                    isVip = true;
+                }
+            }
+            else if (code.Contains("privateServerLinkCode"))
+            {
+                Match pidMatch = Regex.Match(code, @"\/games\/(\d+)");
+                if (pidMatch.Success)
+                    placeId = long.Parse(pidMatch.Groups[1].Value);
+                jobId = code;
+                isVip = true;
+            }
+            else
+            {
+                jobId = code;
+            }
+
+            CancelLaunching();
+
+            if (AccountsView.SelectedObjects.Count > 1)
+            {
+                LauncherToken = new CancellationTokenSource();
+                await LaunchAccounts(SelectedAccounts, placeId, jobId, false, isVip);
+            }
+            else if (SelectedAccount != null)
+            {
+                string res = await SelectedAccount.JoinServer(placeId, jobId, false, isVip);
+                if (!res.Contains("Success"))
+                    MessageBox.Show(res);
+            }
+        }
+
+        private void ERLCCode_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Return)
+            {
+                JoinERLC.PerformClick();
+                e.Handled = true;
+            }
+        }
+
         private async void Follow_Click(object sender, EventArgs e)
         {
             if (!GetUserID(UserID.Text, out long UserId, out var Response))
